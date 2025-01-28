@@ -143,7 +143,7 @@ CREATE TABLE movie_actors (
   actor_id INTEGER,
   role_name TEXT,
   PRIMARY KEY (movie_id, actor_id),
-  FOREIGN KEY (movie_id) REFERENCES movies(movie_id)
+  FOREIGN KEY (movie_id) REFERENCES movies(movie_id),
   FOREIGN KEY (actor_id) REFERENCES actors(actor_id)
 ) ;
 
@@ -177,9 +177,290 @@ INSERT INTO movies (
     2012,
     "PG-13",
     1
-)
+) ;
 
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Christian Bale"
+) ;
 
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Michael Caine"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Liam Neeson"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Katie Holmes"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Gary Oldman"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Heath Ledger"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Aaron Eckhart"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Maggie Gyllenhaal"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Tom Hardy"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Joseph Gordon-Levitt"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Anne Hathaway"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Christian Bale"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Michael Caine"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Liam Neeson"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Katie Holmes"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Gary Oldman"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Heath Ledger"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Aaron Eckhart"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Maggie Gyllenhaal"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Tom Hardy"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Joseph Gordon-Levitt"
+) ;
+
+INSERT INTO actors (
+    actor_name
+) VALUES (
+    "Anne Hathaway"
+) ;
+
+-- Insert movie-actor relationships into the movie_actors table
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    1, 
+    1, 
+    "Bruce Wayne"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    1, 
+    2, 
+    "Alfred"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    1, 
+    3, 
+    "Ra's Al Ghul"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    1, 
+    4, 
+    "Rachel Dawes"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    1, 
+    5, 
+    "Commissioner Gordon"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    2, 
+    1, 
+    "Bruce Wayne"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    2, 
+    6, 
+    "Joker"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    2, 
+    7, 
+    "Harvey Dent"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    2, 
+    2, 
+    "Alfred"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    2, 
+    8, 
+    "Rachel Dawes"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    3, 
+    1, 
+    "Bruce Wayne"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    3, 
+    5, 
+    "Commissioner Gordon"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    3, 
+    9, 
+    "Bane"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    3, 
+    10, 
+    "John Blake"
+) ;
+
+INSERT INTO movie_actors (
+    movie_id, 
+    actor_id, 
+    role_name
+) VALUES (
+    3, 
+    11, 
+    "Selina Kyle"
+) ;
 
 -- Prints a header for the movies output
 .print "Movies"
