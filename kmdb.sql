@@ -489,4 +489,4 @@ SELECT m.title, a.actor_name, ma.role_name
 FROM movie_actors ma 
 INNER JOIN movies m ON ma.movie_id = m.id 
 INNER JOIN actors a ON ma.actor_id = a.id 
-ORDER BY m.title, ma.role_name;
+ORDER BY m.title;
